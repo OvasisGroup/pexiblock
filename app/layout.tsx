@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/ui/general/Navbar";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -25,7 +24,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} antialiased bg-gray-800 bg-[url("/images/background.png")] bg-cover bg-center`}
       >
-        <Navbar/>
         {children}
       </body>
     </html>

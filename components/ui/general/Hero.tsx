@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../button'
+import Link from 'next/link'
 
 export default function Hero() {
     return (
@@ -10,7 +11,7 @@ export default function Hero() {
                     <div className='text-center md:text-left'>
                         <p className='md:text-6xl font-bold text-primary'>Start accepting crypto payments NOW</p>
                         <p className='text-white mt-6 text-xl font-light'>Boost your business with NOWPayments – the best crypto payment gateway for effortless payments!</p>
-                        <Button className='mt-8'>Get Started</Button>
+                        <Link href="/authentication/login"><Button className='mt-8'>Get Started</Button></Link>
                     </div>
                     <div className='flex justify-center'>
                         <Image src="/images/bank.png" width={300} height={300} alt="Hero Image" className='w-full max-w-md p-4' />
