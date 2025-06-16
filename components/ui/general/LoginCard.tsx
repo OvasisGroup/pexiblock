@@ -47,9 +47,9 @@ export function LoginCard() {
         </form>
       </CardContent>
       <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full hover:cursor-pointer font-medium">
+        <Link href={'/dashboard'} className="w-full"><Button className="w-full" type="submit">
           Login
-        </Button>
+        </Button></Link>
         <div className="flex flex-row items-center justify-between gap-2 w-full">
              <a
                   href="#"
@@ -58,7 +58,7 @@ export function LoginCard() {
                   Forgot Password?
                 </a>
                  <Link
-                  href="/authentication/register"
+                  href={'/authentication/register'}
                   className="inline-block text-sm underline-offset-4 hover:underline text-center font-bold"
                 >
                   Register?

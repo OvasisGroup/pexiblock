@@ -15,7 +15,7 @@ import Link from "next/link"
 export function RegisterCard() {
   return (
     <div className="flex flex-col w-full mx-auto items-center justify-center h-screen bg-gray-900 text-white p-4">
-    <Link href="/"><Image src="/images/pexiblock_logo.svg" alt="Logo" width={200} height={100} className="mb-4" /></Link>
+    <Link href={'/'}><Image src="/images/pexiblock_logo.svg" alt="Logo" width={200} height={100} className="mb-4" /></Link>
 
     <Card className="w-full max-w-sm">
       <CardHeader>
