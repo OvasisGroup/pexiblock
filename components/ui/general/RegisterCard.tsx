@@ -12,11 +12,11 @@ import { Label } from "@/components/ui/label"
 import Image from "next/image"
 import Link from "next/link"
 
-export function LoginCard() {
+export function RegisterCard() {
   return (
     <div className="flex flex-col w-full mx-auto items-center justify-center h-screen bg-gray-900 text-white p-4">
-    <Image src="/images/pexiblock_logo.svg" alt="Logo" width={200} height={100} className="mb-4" />
-    <p className="mx-auto w-[400px] text-center mb-6 text-sm">Cryptocurrency is no longer the future — it’s the now. Empower your business to accept Bitcoin, Ethereum, USDT, and more with fast, secure, and low-fee transactions.</p>
+    <Link href="/"><Image src="/images/pexiblock_logo.svg" alt="Logo" width={200} height={100} className="mb-4" /></Link>
+
     <Card className="w-full max-w-sm">
       <CardHeader>
         <CardTitle className="text-center">Login to your account</CardTitle>
@@ -27,6 +27,15 @@ export function LoginCard() {
       <CardContent>
         <form>
           <div className="flex flex-col gap-4">
+             <div className="grid gap-2">
+              <Label htmlFor="fullname">Full Name</Label>
+              <Input
+                id="fullname"
+                type="text"
+                placeholder="Full Names"
+                required
+              />
+            </div>
             <div className="grid gap-2">
               <Label htmlFor="email">Email</Label>
               <Input
@@ -55,13 +64,13 @@ export function LoginCard() {
                   href="#"
                   className="inline-block text-sm underline-offset-4 hover:underline text-center font-bold"
                 >
-                  Forgot Password?
+                  Have Account?
                 </a>
                  <Link
-                  href="/authentication/register"
+                  href="/authentication/login"
                   className="inline-block text-sm underline-offset-4 hover:underline text-center font-bold"
                 >
-                  Register?
+                  Login?
                 </Link>
         </div>
         
